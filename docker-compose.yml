@@ -23,7 +23,7 @@ services:
         #    - ./api/.env
     api:
         build: 
-            context: ./api
+            context: ./Team2_backend
             dockerfile: Dockerfile
         # ports:
         #     - 8080:8080
@@ -37,7 +37,7 @@ services:
           - /app/node_modules # Inside the container, don't try to override this folder, just leave as is    
     front:
         build: 
-            context: ./front
+            context: ./flickr_frontend
             dockerfile: Dockerfile
         # ports:
         #     - 8081:8081
